@@ -77,7 +77,7 @@ const DrawingCanvas = () => {
 
   useEffect(() => {
     if (contextRef.current) {
-      contextRef.current.strokeStyle = penColor; // Dynamically update pen color
+      contextRef.current.strokeStyle = penColor; 
     }
   }, [penColor]);
 

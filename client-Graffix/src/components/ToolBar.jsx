@@ -14,18 +14,18 @@ export default function ToolBar() {
     'teal', 'gold', 'silver'
   ];
 
-  // Dynamically apply background color using inline styles
+  
   const penColorClass = { backgroundColor: penColor };
 
   return (
-    <div className="relative"> {/* Ensure the parent is relative */}
+    <div className="relative"> 
       <div
         className={`w-6 h-6 rounded-full border 
           border-gray-400 cursor-pointer`} 
         style={penColorClass}
         onClick={() => setOpenColorSetting(!openColourSetting)}
       >
-        {/* Color Circle */}
+        
       </div>
 
       {openColourSetting && (
@@ -37,7 +37,7 @@ export default function ToolBar() {
                 key={index}
                 className='w-6 h-6 rounded-full cursor-pointer border border-gray-400'
                 style={{ backgroundColor: color }}
-                onClick={() => setPenColor(color)} // Update the pen color
+                onClick={() => setPenColor(color)} 
               />
             ))}
           </div>
@@ -49,7 +49,7 @@ export default function ToolBar() {
               id="color-picker" 
               className='w-full border border-gray-300 rounded'
               value={penColor} 
-              onChange={(e) => setPenColor(e.target.value)} // Update pen color from input
+              onChange={(e) => setPenColor(e.target.value)} 
             />
           </div>
         </div>

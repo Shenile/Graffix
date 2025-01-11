@@ -4,31 +4,6 @@ import { DrawingProvider } from "./contexts/DrawingContext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  // const [messages, setMessages] = useState([]);
-  // const [msg, setMsg] = useState("");
-  // const socket = useSocket();
-
-  // // Listen for new messages from the server
-  // useEffect(() => {
-  //   if (socket) {
-  //     socket.on("chatMessage", (newMessage) => {
-  //       setMessages((prevMessages) => [...prevMessages, newMessage]);
-  //     });
-  //   }
-
-  //   // Cleanup the event listener when the component unmounts
-  //   return () => {
-  //     if (socket) socket.off("chatMessage");
-  //   };
-  // }, [socket]);
-
-  // // Handle sending a message
-  // const handleSendMessage = () => {
-  //   if (socket && msg) {
-  //     socket.emit("chatMessage", msg); // Emit the message with the correct variable
-  //     setMsg(""); // Clear the input field
-  //   }
-  // };
 
   return (
     <div className="h-screen flex flex-col justify-between">

@@ -7,11 +7,11 @@ export default function DrawingPage() {
   const { socket, roomData, setRoomData } = useSocket();
 
   const handleRoomUpdate = (data) => {
-    // Update only necessary room data (e.g., members count)
+    
     setRoomData(prevState => ({
       ...prevState,
-      members: data.members, // Assuming 'data' has updated members count
-      capacity: data.capacity, // Assuming 'data' has updated capacity
+      members: data.members, 
+      capacity: data.capacity, 
     }));
   };
 
@@ -20,12 +20,11 @@ export default function DrawingPage() {
   useEffect(() => {
     socket.on("roomUpdate", handleRoomUpdate);
 
-    // Cleanup the socket event listener on component unmount
+    
     return () => {
       socket.off("roomUpdate", handleRoomUpdate);
     };
-  }, [socket, roomData]); // No need to include roomData here
-
+  }, [socket, roomData]); 
   return (
     <div className="flex flex-col gap-2 justify-center items-center px-4 h-full w-full dark:bg-gray-900">
       <div className="flex gap-4 items-center w-fit">

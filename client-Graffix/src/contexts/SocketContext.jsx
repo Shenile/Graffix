@@ -27,12 +27,12 @@ export const SocketProvider = ({ children }) => {
     }
   }, [roomCode])
   useEffect(() => {
-    // Connect to the socket.io server
-    const newSocket = io('http://localhost:3000');  // Replace with your server URL
+   
+    const newSocket = io('https://graffix.onrender.com/');  
     console.log(newSocket)
     setSocket(newSocket);
 
-    // Clean up the socket connection when the component unmounts
+    
     return () => newSocket.close();
   }, []);
 
