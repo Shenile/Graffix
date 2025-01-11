@@ -8,7 +8,7 @@ const server = createServer(app);
 const port = 3000;
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // The URL of your client application
+    origin: "https://graffix-shenile.netlify.app/", // The URL of your client application
     methods: ["GET", "POST"],
   },
 });
