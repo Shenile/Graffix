@@ -69,8 +69,8 @@ export default function ToolBar() {
         )}
       </div>
 
-      <div className="w-fit h-full rounded-lg border border-gray-500">
-        <p>Draw it out !! </p>
+      <div className="w-fit h-full rounded-lg border border-gray-500 px-2">
+        <p >Draw it out !! </p>
       </div>
     </div>
   );
