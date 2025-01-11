@@ -59,7 +59,6 @@ function CreateRoom({ onBack }) {
 
   const handleCreateRoom = () => {
     if (validateRoomInputs(roomCode, membersCount)) {
-      console.log("the event is emitted , with roomcode"+ roomCode)
       socket.emit("createRoom", roomCode, membersCount);
     }
   };

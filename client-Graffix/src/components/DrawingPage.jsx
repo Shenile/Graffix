@@ -31,6 +31,7 @@ export default function DrawingPage() {
         <p className="mr-8 font-semibold">Room members : {roomData?.members} / {roomData?.capacity}</p>
         <h1 className="font-semibold">Pen Color :</h1>
         <ToolBar />
+        
       </div>
 
       <div className="flex justify-center w-full">

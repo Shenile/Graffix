@@ -29,7 +29,6 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
    
     const newSocket = io('https://graffix.onrender.com/');  
-    console.log(newSocket)
     setSocket(newSocket);
 
     
