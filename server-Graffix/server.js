@@ -157,7 +157,7 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  console.log("hi");
+  res.send("Hi, server is running");
 });
 
 server.listen(port, () => {
